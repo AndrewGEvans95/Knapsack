@@ -19,11 +19,11 @@ subject to ![maximize knapsack value and weight bound by max weight](https://wik
 We will define <i>i</i> as an item which has
 <i>w<sub>i</sub></i> weight and <i>v<sub>i</sub></i> value.
 
-Given two <i>n</i>-tuples of postive integers <<i>v</i><sub>1</sub>,<i>v</i><sub>2</sub>,...,<i>v</i><sub>n</sub>> and <<i>w</i><sub>1</sub>,<i>w</i><sub>2</sub>,...,<i>w</i><sub>n</sub>> and <i>W</i>>0 we want to determine the subset ![subset intersection](http://www.sciweavers.org/tex2img.php?eq=T%20%20%5Csubseteq%20%20%5Cbig%5C%7B1%2C2%2C...%2C%5Ctextit%7Bn%7D%5Cbig%5C%7D&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0) (of items to put in knapsack) 
+Given two <i>n</i>-tuples of postive integers <<i>v</i><sub>1</sub>,<i>v</i><sub>2</sub>,...,<i>v</i><sub>n</sub>> and <<i>w</i><sub>1</sub>,<i>w</i><sub>2</sub>,...,<i>w</i><sub>n</sub>> and <i>W</i>>0 we want to determine the subset ![subset intersection](https://www.latex4technics.com/imgtemp/zf9iqp-1.png?1483667365) (of items to put in knapsack) 
 
-maximize ![maximizes such that the value is highest](http://www.sciweavers.org/tex2img.php?eq=%20%5Csum_%7B%28%5Ctextit%7Bi%7D%20%5Cin%20%5Ctextit%7BT%7D%29%7D%5C%20%5Ctextit%7Bv%7D_i&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0) 
+maximize ![maximizes such that the value is highest](https://www.latex4technics.com/imgtemp/apkudz-1.png?1483667463) 
 
-subject to ![maximizes the weight in terms of defined limit](http://www.sciweavers.org/tex2img.php?eq=%20%5Csum_%7B%28%5Ctextit%7Bi%7D%20%5Cin%20%5Ctextit%7BT%7D%29%7D%5C%20%5Ctextit%7Bw%7D_i%20%20%5Cleq%20W&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
+subject to ![maximizes the weight in terms of defined limit](https://www.latex4technics.com/imgtemp/upb832-1.png?1483667527)
 
 # Solving the problem
 The knapsack problem is a combinatorial optimization problem and is considered an NP-Complete problem.
