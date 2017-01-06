@@ -30,4 +30,6 @@ The knapsack problem is a combinatorial optimization problem and is considered a
 ![P!=NP Diagram](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/P_np_np-complete_np-hard.svg/300px-P_np_np-complete_np-hard.svg.png)
 
 One possible solution would be to brute force the problem.  This would involve creating every possible combination of items with a total weight less than or equal to the maximim defined weight.  Such a solution would become exponentially more difficult to solve as the number of items increase.
-Using a brute force solution would ultimately results in a ![Big O Complexity](https://www.latex4technics.com/imgtemp/d4ui0r-1.png?1483677382) time complexity.
+Using a brute force solution would ultimately results in a ![Big O Complexity](https://raw.githubusercontent.com/AndrewGEvans95/Knapsack/master/resources/Time%20Complexity%20of%20Brute%20Force.png) time complexity.
+At this point we ask our selves, "How can I make this faster?"
+The answer, such is the case for almost all issues, is to divide and conquer.
