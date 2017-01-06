@@ -19,11 +19,11 @@ subject to ![maximize knapsack value and weight bound by max weight](https://wik
 We will define <i>i</i> as an item which has
 <i>w<sub>i</sub></i> weight and <i>v<sub>i</sub></i> value.
 
-Given two <i>n</i>-tuples of postive integers <<i>v</i><sub>1</sub>,<i>v</i><sub>2</sub>,...,<i>v</i><sub>n</sub>> and <<i>w</i><sub>1</sub>,<i>w</i><sub>2</sub>,...,<i>w</i><sub>n</sub>> and <i>W</i>>0 we want to determine the subset ![subset intersection](https://www.latex4technics.com/imgtemp/zf9iqp-1.png?1483667365) (of items to put in knapsack) 
+Given two <i>n</i>-tuples of postive integers <<i>v</i><sub>1</sub>,<i>v</i><sub>2</sub>,...,<i>v</i><sub>n</sub>> and <<i>w</i><sub>1</sub>,<i>w</i><sub>2</sub>,...,<i>w</i><sub>n</sub>> and <i>W</i>>0 we want to determine the subset ![subset intersection](https://raw.githubusercontent.com/AndrewGEvans95/Knapsack/master/resources/T%20exists%20in%20set.png) (of items to put in knapsack) 
 
-maximize ![maximizes such that the value is highest](https://www.latex4technics.com/imgtemp/apkudz-1.png?1483667463) 
+maximize ![maximizes such that the value is highest](https://raw.githubusercontent.com/AndrewGEvans95/Knapsack/master/resources/Sum%20of%20values%20in%20set.png) 
 
-subject to ![maximizes the weight in terms of defined limit](https://www.latex4technics.com/imgtemp/upb832-1.png?1483667527)
+subject to ![maximizes the weight in terms of defined limit](https://raw.githubusercontent.com/AndrewGEvans95/Knapsack/master/resources/Sum%20of%20weight%20in%20set.png)
 
 # Solving the problem
 The knapsack problem is a combinatorial optimization problem and is considered an NP-Complete problem.
