@@ -47,4 +47,4 @@ The answer: Dynamic Programming
 
 # Dynamic Programming: An Adventure in Space Time
 The main idea behind dynamic programming is to compute the solutions to subsubproblems once and store the solutions in an array so that they may be reused later.
-This ultimately increases the amount of memory used while decreasing the time needed to solve the problem.
+This ultimately increases the amount of memory used while decreasing the time needed to solve the problem.  This is refered to as Space-Time tradeoff.
