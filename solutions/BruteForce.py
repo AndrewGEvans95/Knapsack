@@ -1,12 +1,12 @@
 #A brute force solution to the 0-1 Knapsack Problem
-#weight 	|	value
+#weight     |	value
 #-----------|----------
-#	15		|	2
-#	13		|	5
-#	13		|	9
-#	12		|	5
-#	12		|	9
-#	11		|	7
+#	15  |	2
+#	13  |	5
+#	13  |	9
+#	12  |	5
+#	12  |	9
+#	11  |	7
 #(weight, value)
 items = [(15, 2), (13, 5), (13, 9), (12, 5), (12, 9), (11, 7)]
 #Weight capacity
