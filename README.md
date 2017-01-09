@@ -60,4 +60,4 @@ This ultimately increases the amount of memory used while decreasing the time ne
   * Initial settings V[0, <i>w</i>]=0 for 0<=<i>w</i><=W, and any V[0, <i>w</i>]=-inifinty for <i>w</i><=0 is illegal.  Our recursive step is V[<i>i</i>,<i>w</i>]=max(V[<i>i-1</i>,<i>w</i>],<i>v<sub>i</sub></i>+V[<i>i</i>-1,<i>w</i>-<i>w<sub>i</sub></i>]) for 1<=<i>i</i><=<i>n</i>, 0<=<i>w</i><=W.
 3. Compute the value of an optimal solution in a bottom-up fashion using a table structure
   * Bottom: V[0,<i>w</i>]=0 for all 0<=<i>w</i><=W Bottom up: V[<i>i</i>,<i>w</i>]=max(V[<i>i-1</i>,<i>w</i>],<i>v<sub>i</sub></i>+V[<i>i</i>-1,<i>w</i>-<i>w<sub>i</sub></i>])
-4. Find optimal solution using compute information
+4. Find optimal solution using the computed information
