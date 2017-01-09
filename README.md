@@ -30,6 +30,10 @@ The knapsack problem is a combinatorial optimization problem and is considered a
 ![P!=NP Diagram](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/P_np_np-complete_np-hard.svg/300px-P_np_np-complete_np-hard.svg.png)
 
 One possible solution would be to brute force the problem.  This would involve creating every possible combination of items with a total weight less than or equal to the maximim defined weight.  Such a solution would become exponentially more difficult to solve as the number of items increase.
+
+
+A simple python based brute force method can be found [here](https://github.com/AndrewGEvans95/Knapsack/blob/master/solutions/BruteForce.py "0-1 Knapsack brute force solution")
+
 Using a brute force solution would ultimately results in an ![Big O Complexity](https://raw.githubusercontent.com/AndrewGEvans95/Knapsack/master/resources/Time%20Complexity%20of%20Brute%20Force.png) time complexity.
 At this point we ask our selves, "How can I make this faster?"
 The answer, such is the case for almost all of life's problems, is to divide and conquer.  
@@ -48,3 +52,15 @@ The answer: Dynamic Programming
 # Dynamic Programming: An Adventure in Space Time
 The main idea behind dynamic programming is to compute the solutions to subsubproblems once and store the solutions in an array so that they may be reused later.
 This ultimately increases the amount of memory used while decreasing the time needed to solve the problem.  This is refered to as Space-Time tradeoff.
+
+# The Basics of Constructing a Dynamic Programming Solution
+1.  Break the problem into smaller subproblems and characterize the structure of an optimal solution.
+..* First we constuct an array V[0..<i>n</i>, 0..W].  For 1 <= <i>i</i> <= <i>n</i>, and 0 <= <i>w</i> <= W, where V[<i>i</i>,<i>w</i>] will store the maximum weight of any subset of item {1,2,...,<i>i</i>} of combined value at most <i>w</i>.  This means that the array entry V[<i>n</i>, W] will contain the highest sum total value of items that meet the set weight constraint.
+
+2.  Recursively define the definition of an optimal solution
+..* Initial settings V[0, <i>w</i>]=0 for 0<=<i>w</i><=W, and any V[0, <i>w</i>]=-inifinty for <i>w</i><=0 is illegal.  Our recursive step is V[<i>i</i>,<i>w</i>]=max(V[<i>i-1</i>,<i>w</i>],<i>v<sub>i</sub></i>+V[<i>i</i>-1,<i>w</i>-<i>w<sub>i</sub></i>]) for 1<=<i>i</i><=<i>n</i>, 0<=<i>w</i><=W.
+
+3.  Compute the value of an optimal solution in a bottom-up fashion using a table structure
+..*  Bottom: V[0,<i>w</i>]=0 for all 0<=<i>w</i><=W Bottom up: V[<i>i</i>,<i>w</i>]=max(V[<i>i-1</i>,<i>w</i>],<i>v<sub>i</sub></i>+V[<i>i</i>-1,<i>w</i>-<i>w<sub>i</sub></i>])
+4.  Find optimal solution using compute information
+
