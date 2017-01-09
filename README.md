@@ -54,16 +54,10 @@ The main idea behind dynamic programming is to compute the solutions to subsubpr
 This ultimately increases the amount of memory used while decreasing the time needed to solve the problem.  This is refered to as Space-Time tradeoff.
 
 # The Basics of Constructing a Dynamic Programming Solution
-1.  Break the problem into smaller subproblems and characterize the structure of an optimal solution.
-
-First we constuct an array V[0..<i>n</i>, 0..W].  For 1 <= <i>i</i> <= <i>n</i>, and 0 <= <i>w</i> <= W, where V[<i>i</i>,<i>w</i>] will store the maximum weight of any subset of item {1,2,...,<i>i</i>} of combined value at most <i>w</i>.  This means that the array entry V[<i>n</i>, W] will contain the highest sum total value of items that meet the set weight constraint.
-
-2.  Recursively define the definition of an optimal solution
-
-Initial settings V[0, <i>w</i>]=0 for 0<=<i>w</i><=W, and any V[0, <i>w</i>]=-inifinty for <i>w</i><=0 is illegal.  Our recursive step is V[<i>i</i>,<i>w</i>]=max(V[<i>i-1</i>,<i>w</i>],<i>v<sub>i</sub></i>+V[<i>i</i>-1,<i>w</i>-<i>w<sub>i</sub></i>]) for 1<=<i>i</i><=<i>n</i>, 0<=<i>w</i><=W.
-3.  Compute the value of an optimal solution in a bottom-up fashion using a table structure
-
-Bottom: V[0,<i>w</i>]=0 for all 0<=<i>w</i><=W Bottom up: V[<i>i</i>,<i>w</i>]=max(V[<i>i-1</i>,<i>w</i>],<i>v<sub>i</sub></i>+V[<i>i</i>-1,<i>w</i>-<i>w<sub>i</sub></i>])
-
-4.  Find optimal solution using compute information
-
+1. Break the problem into smaller subproblems and characterize the structure of an optimal solution.
+..* First we constuct an array V[0..<i>n</i>, 0..W].  For 1 <= <i>i</i> <= <i>n</i>, and 0 <= <i>w</i> <= W, where V[<i>i</i>,<i>w</i>] will store the maximum weight of any subset of item {1,2,...,<i>i</i>} of combined value at most <i>w</i>.  This means that the array entry V[<i>n</i>, W] will contain the highest sum total value of items that meet the set weight constraint.
+2. Recursively define the definition of an optimal solution
+..* Initial settings V[0, <i>w</i>]=0 for 0<=<i>w</i><=W, and any V[0, <i>w</i>]=-inifinty for <i>w</i><=0 is illegal.  Our recursive step is V[<i>i</i>,<i>w</i>]=max(V[<i>i-1</i>,<i>w</i>],<i>v<sub>i</sub></i>+V[<i>i</i>-1,<i>w</i>-<i>w<sub>i</sub></i>]) for 1<=<i>i</i><=<i>n</i>, 0<=<i>w</i><=W.
+3. Compute the value of an optimal solution in a bottom-up fashion using a table structure
+..* Bottom: V[0,<i>w</i>]=0 for all 0<=<i>w</i><=W Bottom up: V[<i>i</i>,<i>w</i>]=max(V[<i>i-1</i>,<i>w</i>],<i>v<sub>i</sub></i>+V[<i>i</i>-1,<i>w</i>-<i>w<sub>i</sub></i>])
+4. Find optimal solution using compute information
