@@ -14,6 +14,7 @@ Given a set of <i>n</i> items numbered from 1 up to <i>n</i>, each with a weight
 maximize ![maximize knapsack weight](https://wikimedia.org/api/rest_v1/media/math/render/svg/85620037d368d2136fb3361702df6a489416931b)
 
 subject to ![maximize knapsack value and weight bound by max weight](https://wikimedia.org/api/rest_v1/media/math/render/svg/dd6e7c9bca4397980976ea6d19237500ce3b8176) and ![maximize such that item either exists in bag or does not](https://wikimedia.org/api/rest_v1/media/math/render/svg/07dda71da2a630762c7b21b51ea54f86f422f951).
+<i>x</i><sub>i</sub> is the binary decision of whether or not to place item in the knapsack. 
 
 # A More Formal Programmer Friendly Definition
 We will define <i>i</i> as an item which has
